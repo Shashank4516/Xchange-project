@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./commonStyle.css" />
+    <link rel="stylesheet" href="./Exchnage.css" />
+    <script
+      src="https://kit.fontawesome.com/aa7454d09f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="logo">
+        <a href="./index.html">
+          <img src="./img/Xchange_logo-removebg-preview 12.png" alt="" />
+        </a>
+      </div>
+      <ul class="nav" id="nav">
+        <ul class="navLogo">
+          <a href="./index.html">
+            <img src="./img/Xchange_logo-removebg-preview 12.png" alt="" />
+          </a>
+        </ul>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-item active">Home</a></li>
+            <li><a href="#" class="nav-item">About us</a></li>
+            <li>
+              <!-- <a href="./Doc/index.html" class="nav-item sign-in">Sign in</a> -->
+            </li>
+            <p class="texts">Hello, shashank</p>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/Avatarrr Image.png"
+                  alt="Profile Picture"
+                  class="profile-pic"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <li class="sociallinkContainer">
+          <img class="sociallink" src="./img/fabook-icon-white.svg" alt="" />
+          <img class="sociallink" src="./img/twitter-icon-white.svg" alt="" />
+          <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="" />
+          <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="" />
+        </li>
+      </ul>
+      <div id="barContainer">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+      <div class="sectionDesc">
+        <h1 class="headline">
+          Convert Your <span class="cryptoText">Money in crypto</span>.
+        </h1>
+        <p class="sub-headline">
+            Unlock the future of finance: 
+            Convert your money into cryptocurrency 
+            today and explore a decentralized world of endless possibilities.
+        </p>
+    </section>
+
+
+    <header></header>
+
+    <div class="container">
+
+        <div class="img-placed">
+            <img src="crypto.png" alt="">
+        </div>
+
+        <form action="">
+
+            <input type="text" name="amount" id="amount" placeholder="Enter Amount" required>
+
+            <label id="fromCurrencyName"></label>
+            <div id="select-field">
+
+                <select name="fromCurrency" id="fromCurrency" onchange="showFromCurrencyName()">
+                    <option value="USD" selected="">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="INR">INR - India Rupee</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="ZAR">ZAR - South African Rand</option>
+                    <option value="BGN">BGN - Bulgarian Lev</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="HUF">HUF - Hungarian Forint</option>
+                    <option value="CNY">CNY - Chinese Yuan Renminbi</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="GHS">GHS - Ghanians Cedi</option>
+                    <option value="NGN">NGN - Nigerian Naira</option>
+                </select>
+    
+                
+                <select name="toCurrency" id="toCurrency" onchange="showCurrencyName()">
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="USDT">Tether (USDT)</option>
+                    <option value="BNB">Binance Coin (BNB)</option>
+                    <option value="USDC">USD Coin (USDC)</option>
+                    <option value="XRP">XRP (XRP)</option>
+                    <option value="BUSD">Binance USD (BUSD)</option>
+                    <option value="ADA">cardano (ADA)</option>
+                    <option value="DOGE">Dogecoin (DOGE)</option>
+                    <option value="MATIC">Polygon (MATIC)</option>
+                    <option value="SOL">Solana (SOL)</option>
+                    <option value="DOT">Polkadot (DOT)</option>
+                    <option value="SHIB">Shiba Inu (SHIB)</option>
+                    <option value="LTC">Litecoin (LTC)</option>
+                    <option value="TRX">Tron (TRX)</option>
+                    <option value="AVAX">Avalanche (AVAX)</option>
+                </select>
+
+            </div>
+
+            <br>
+
+            <button type="button" id="convert" class="primary-btn">
+                Convert
+            </button>
+
+        </form>
+
+        <p id="result"></p>
+    </div>
+    
+ <script src="Exchnage.js"></script>
+  </body>
+</html>
